@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "Cloths"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "richDescription": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "brand": {
+      "type": "string",
+      "default": "Levis"
+    },
+    "price": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Mobiles and Tablet",
+        "Consumer Electronics",
+        "Books",
+        "Baby Product",
+        "Home Furnishings",
+        "Food",
+        "Groceries"
+      ],
+      "default": "Consumer Electronics",
+      "required": false
+    },
+    "countInStock": {
+      "type": "integer",
+      "default": 0
+    },
+    "rating": {
+      "type": "integer",
+      "default": 0
+    },
+    "numReviews": {
+      "type": "integer",
+      "default": 0
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": true
+    },
+    "dateCreated": {
+      "type": "date"
+    }
+  }
+}
